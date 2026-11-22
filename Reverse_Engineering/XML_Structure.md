@@ -3,6 +3,9 @@
 ## Scope
 Файлы скриптов X3: Terran Conflict 3.4, используемые в исследовании X-Studio v1.08.
 
+## Связанные разборы
+- [MARS Config index reference](MARS_Config_Index_Reference.md) — найденные индексы `$MARS.Config[n]` и строки чтения/записи в изученном скрипте.
+
 ## Что исследовать
 - XML declaration и корневой элемент.
 - Состав, порядок и атрибуты дочерних элементов.
