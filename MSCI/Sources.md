@@ -3,7 +3,7 @@
 Реестр источников команд, синтаксиса MSCI и технических сведений об инструментах.
 
 | ID | Источник | Версия/контекст | Что проверяется | Статус/ограничения |
-||---|---|---|---|
+|---|---|---|---|---|
 | S-001 | [Egosoft FAQ: Activating the Script Editor](https://www.egosoft.com/support/faq/faq_answer_en.php?answer=945) | X3: Terran Conflict; FAQ от 2010 г. | Активация встроенного Script Editor | Первичный официальный источник; страницу не удалось открыть полностью, поисковый сниппет доступен |
 | S-002 | [X3 Wiki: Script editor](https://x3.solasistim.net/index.php/Script_Editor/) | TC; статья/редакция 2013 г. | Общее назначение SE и MSCI | Просмотрена; не каталог команд |
 | S-003 | [X3 Wiki: Scripts & Mods](https://x3.solasistim.net/index.php/Scripts_%26_Mods/) | X3 Wiki | Активация SE, основные возможности встроенного редактора | Просмотр поискового результата; обзорный источник |
