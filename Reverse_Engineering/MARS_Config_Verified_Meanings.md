@@ -8,6 +8,8 @@
 
 ## Mappings confirmed in code/text
 
+The translation file contains additional descriptive strings 2660–2665 concerning area lasers and energy settings. These IDs are not directly referenced by this config XML at the listed setting handlers, so they are treated as supplementary text context rather than a proven ID-to-handler link.
+
 | Config | Meaning supported by source | Values / bounds visible in code | Evidence |
 |---:|---|---|---|
 | 93 | Defender collection of contraband | Toggle; text IDs 2405/2408 for on/off | Lines 807–812; language ID 2653 |
@@ -27,12 +29,12 @@
 | 86 | MARS availability for enemy capital ships | States 1, 2, or null. Menu comments/text refer to one enemy ship and all AI cap ships; complete mapping needs missing menu texts | Lines 1013–1038, 1874–1899 |
 | 87 | MARS logo mode | null → 1 → 2 → null; exact meanings depend on missing texts 2462/2463/2465 | Lines 1050–1065, 1853–1868 |
 | 18 | Neutral-station avoidance setting | Cycle 0–3; exact labels not available in provided language file | Lines 996–1009, 1981–1986 |
-| 44 | Area-laser exclusion threshold in defense mode, based on shield percentage | Numeric clamp -10 to 110 | Lines 892–898, 2046–2049; ID 2660/2662 |
-| 45 | Area-laser exclusion threshold in attack mode, based on shield percentage | Numeric clamp -10 to 110 | Lines 892–901, 2051–2054; ID 2661/2662 |
+| 44 | Area-laser exclusion threshold in defense mode, based on shield percentage | Numeric clamp -10 to 110 | Lines 892–898, 2046–2049; labels corroborated indirectly by language entries 2660/2662 (not direct references in this script) |
+| 45 | Area-laser exclusion threshold in attack mode, based on shield percentage | Numeric clamp -10 to 110 | Lines 892–901, 2051–2054; labels corroborated indirectly by language entries 2661/2662 (not direct references in this script) |
 | 178 | Energy management: normal percentage setting | Input clamp -1000 to 1000 | Lines 908–911, 1990–2001 |
-| 184 | Energy management: low-energy activation percentage | Clamp 0–100 | Lines 913–916, 2003–2014; ID 2663 |
-| 185 | Energy management: low-energy setting value | Clamp -1000 to 1000 | Lines 918–923, 2016–2027; ID 2664 |
-| 190 | Observe assigned target sizes below energy percentage | Clamp 0–95 | Lines 925–932, 2029–2040; ID 2665 |
+| 184 | Energy management: low-energy activation percentage | Clamp 0–100 | Lines 913–916, 2003–2014; supplementary language label 2663 (not directly linked in this script) |
+| 185 | Energy management: low-energy setting value | Clamp -1000 to 1000 | Lines 918–923, 2016–2027; supplementary language label 2664 (not directly linked in this script) |
+| 190 | Observe assigned target sizes below energy percentage | Clamp 0–95 | Lines 925–932, 2029–2040; supplementary language label 2665 (not directly linked in this script) |
 | 97 | Performance menu setting described in code as target-acquisition wait after X targets | Cycle 0 → 5 → 10 → 25 → 0 | Lines 1161–1172, 2084–2095 |
 | 98 | Performance setting comment: target changing / salvo length; exact semantic meaning remains ambiguous | Cycle 0 → 1 → 2 → 4 → 0 | Lines 1174–1185, 2097–2108 |
 | 99 | Goblin control setting (exact effect not established) | Cycle 0 → 800 → 1600 → 3000 → 0 | Lines 1187–1198, 2110–2121 |
