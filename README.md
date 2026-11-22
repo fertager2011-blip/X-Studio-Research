@@ -15,6 +15,7 @@
 ## Разделы
 - [Reverse engineering](Reverse_Engineering/README.md)
   - [MARS Config index reference](Reverse_Engineering/MARS_Config_Index_Reference.md)
+  - [Verified MARS Config meanings](Reverse_Engineering/MARS_Config_Verified_Meanings.md)
   - [Practical file editing guide](Reverse_Engineering/Practical_File_Editing.md)
 - [MSCI](MSCI/README.md)
 - [Confirmed findings](Findings/Confirmed.md)
