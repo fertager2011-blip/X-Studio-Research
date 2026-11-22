@@ -1,2 +1,28 @@
 # X-Studio-Research
-Research and documentation of Studio Script Editor and X3: Terran Conflict MSCI
+
+Исследовательский репозиторий по X-Studio Script Editor (mr.bear, v1.08) и MSCI для X3: Terran Conflict 3.4.
+
+## Цель
+Собрать проверяемую документацию о структуре скриптов, XML, `codearray`, загрузке/сохранении и командах MSCI. Не переносить сведения из других версий X3 без проверки совместимости.
+
+## Правила доказательности
+- **Confirmed** — подтверждено исходным файлом, воспроизводимым тестом или надёжным первичным источником.
+- **Hypothesis** — предположение/рабочая версия, требующая проверки.
+- **Unknown** — данных пока нет.
+- Не выдумывать ID команд, имена функций, переменные, пути, форматы или поведение редактора.
+- Для каждого утверждения фиксировать источник, версию, метод проверки и ограничения.
+
+## Разделы
+- [Reverse engineering](Reverse_Engineering/README.md)
+- [MSCI](MSCI/README.md)
+- [Confirmed findings](Findings/Confirmed.md)
+- [Hypotheses](Findings/Hypotheses.md)
+- [Tests](Findings/Tests.md)
+
+## Версии и scope
+- Game: X3: Terran Conflict 3.4
+- Editor: X-Studio Script Editor by mr.bear v1.08
+- Scope: исследование форматов и поведения редактора; совместимость с другими X3 отдельно проверяется.
+
+## Статус
+Начальная структура создана. Содержательные технические выводы пока не заявляются без проверки.
