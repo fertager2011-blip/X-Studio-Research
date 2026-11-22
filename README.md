@@ -14,6 +14,7 @@
 
 ## Разделы
 - [Reverse engineering](Reverse_Engineering/README.md)
+  - [Practical file editing guide](Reverse_Engineering/Practical_File_Editing.md)
 - [MSCI](MSCI/README.md)
 - [Confirmed findings](Findings/Confirmed.md)
 - [Hypotheses](Findings/Hypotheses.md)
