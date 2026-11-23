@@ -38,3 +38,35 @@ Custom menus are built into an array using commands such as:
 
 ## Next practical test
 Create a small isolated test script using the verified command to generate a row with short left text and a short right value (e.g. label/value), place the result in a custom menu array, and open the menu. Test short, long, empty-right, and empty-left cases in-game. Only after this is validated should this formatting be applied to MARS menus.
+
+
+## Additional verified mechanism: formatted-text arrays (patch 2.5+)
+
+The Egosoft Community Wiki menu tutorial indexed as “Creating beautiful menus in X3: Terran Conflict” reports that, from patch 2.5, any menu command expecting text can also accept an array structured as:
+
+`ARRAY('PosCol1', 'text1', 'PosCol2', 'text2', ...)`
+
+The tutorial describes each `PosColN` as an integer column position: `1` places a column at the left side and `-1` at the right side. This permits multi-column text formatting in a menu text field. This is a flexible route beyond the dedicated left/right formatting command.
+
+**Caution:** The wiki search-index excerpt provides this format and positional explanation, but the full tutorial page could not be opened in this session. The format is source-supported but not yet independently validated in a TC 3.4 in-game test.
+
+## Test matrix (not yet executed in game)
+
+| Case | Left column | Right column | Purpose |
+|---|---|---|---|
+| A | Short label | ON | Basic two-column alignment |
+| B | Long label | ON | Check left-side width/overlap |
+| C | Short label | Long value | Check right-side width/overlap |
+| D | Short label | Empty string | Empty right column behavior |
+| E | Empty string | ON | Empty left column behavior |
+| F | Two rows with different values | Compare alignment stability |
+
+## Research conclusions
+
+- **Source-confirmed:** Dedicated command 1523 formats left and right strings into one menu text row; command definition lists three string-type slots (return string, left string, right string).
+- **Wiki indexed text:** Since patch 2.5, text-consuming menu commands accept positional formatted-text arrays; `1` means left and `-1` means right.
+- **Not tested in game:** Exact display in TC 3.4/X-Studio, column widths, long-text behavior, color markup interaction, and compatibility of each menu text slot.
+- **Next step:** Test the array formatting mechanism in a separate minimal menu, then compare with command 1523. Do not alter MARS menu code until rendering is confirmed.
+
+## Additional source
+3. Egosoft Community Wiki tutorial, “Creating beautiful menus in X3: Terran Conflict” (indexed text and attachment content): https://wiki.egosoft.com/X3%20Wiki/02.%20X3%3A%20Terran%20Conflict/Scripts%20and%20Modding/Tutorials/Creating%20beautiful%20menus%20in%20X3%3A%20Terran%20Conflict/
