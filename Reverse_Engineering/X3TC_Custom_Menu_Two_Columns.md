@@ -70,3 +70,21 @@ The tutorial describes each `PosColN` as an integer column position: `1` places 
 
 ## Additional source
 3. Egosoft Community Wiki tutorial, “Creating beautiful menus in X3: Terran Conflict” (indexed text and attachment content): https://wiki.egosoft.com/X3%20Wiki/02.%20X3%3A%20Terran%20Conflict/Scripts%20and%20Modding/Tutorials/Creating%20beautiful%20menus%20in%20X3%3A%20Terran%20Conflict/
+
+
+## Verified menu tutorial findings (reviewed 2026-11-23)
+
+The Egosoft Community Wiki “Creating beautiful menus in X3: Terran Conflict” was opened and reviewed in full through its indexed page content.
+
+- Menus are arrays; built-in menu commands create arrays in expected formats.
+- From patch 2.5, text-taking menu commands accept positional text arrays: `ARRAY(position1, string1, position2, string2, ...)`.
+- Column positions are integers. `1` positions a field left; `-1` positions it right.
+- The tutorial gives maximum position 346 for normal menus and 858 for info menus.
+- Column values must be strings; the positions must be integers.
+- Tutorial warns that differently positioned column groups may shift/widen when later groups only appear after scrolling. Use a consistent column-position group throughout a menu.
+- Tutorial describes a duplicate-heading bug when a column-formatted heading is the first heading; avoid column formatting in the first heading or insert a null heading as workaround.
+- It demonstrates regular menu item text and info-line text accepting formatted arrays; return value of a selected menu item is retained as first item in the return array. ESC returns -1.
+
+Source: https://wiki.egosoft.com/X3%20Wiki/02.%20X3%3A%20Terran%20Conflict/Scripts%20and%20Modding/Tutorials/Creating%20beautiful%20menus%20in%20X3%3A%20Terran%20Conflict/
+
+**Game verification still pending:** these source instructions have not been tested in the user's TC 3.4 installation. A separate test-plan document was added; no MARS scripts were edited.
